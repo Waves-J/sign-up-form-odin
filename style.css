@@ -69,8 +69,92 @@ body {
     vertical-align: middle;
 }
 
+.content > div {
+    flex: 3 0 0;
+    min-height: 50px;
+}
+
+.content > div:nth-child(2) {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content > div:nth-child(2n + 1) {
+    background-color: #eff1f4;
+    z-index: -2
+}
+
+.content > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.information {
+    font-weight: 800;
+    font-size: 24px;
+    height: 60%;
+    padding: 0px 120px 0px 50px
+}
+
+.information > div:nth-child(3) {
+    margin-top: 30px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
 .content {
     flex: 3 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 40px 120px 50px 50px
+}
+
+.container > div:first-child {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+}
+
+form > div {
+    flex: 1 1 auto;
+}
+
+button {
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+button ~ div {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+label,
+input,
+select,
+progress,
+meter {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 80%;
+  height: 30px;
 }
 
 a {
