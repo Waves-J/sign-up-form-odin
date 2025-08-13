@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("fonts/Norse-Bold.otf");
+}
+
 body {
-    font-family: Norse-Bold, sans-serif;
+    font-family: sans-serif;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -29,6 +34,19 @@ body {
     flex: 1 1 0;
 }
 
+.third {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.third .text {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 150%;
+}
+
 .odin-header {
     color: white;
     display: flex;
@@ -43,13 +61,22 @@ body {
 }
 
 .odin-header .odin-text {
-    font-size: 75px;
-    margin-top: 40px;
+    font-family: "Norse-Bold", sans-serif;
+    font-size: 125px;
+    margin-top: 20px;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
 }
 
 .content {
-    flex: 2 0 0;
+    flex: 3 0 0;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: rgb(206, 171, 239);
 }
