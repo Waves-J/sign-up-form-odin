@@ -70,7 +70,7 @@ body {
 }
 
 .content > div {
-    flex: 3 0 0;
+    flex: 1 0 400px;
     min-height: 50px;
 }
 
